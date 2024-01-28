@@ -1,4 +1,4 @@
-.signup-form{
+.otp-form{
     background: radial-gradient(circle, #2e2e2e 0%, #000 100%);
 }
 
@@ -6,7 +6,7 @@ a{
     text-decoration: none;
 }
 
-.signup{
+.otp{
     height: 100vh;
 }
 

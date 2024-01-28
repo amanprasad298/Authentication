@@ -18,7 +18,7 @@ return (
                         
                     </div>
                     <div class="mt-4">
-                        <button class="btn btn-primary w-100 ">Send OTP</button>
+                        <Link to='/otp'><button class="btn btn-primary w-100 ">Send OTP</button></Link>
                     </div>
                     <div className="text-center mt-4">
                         <p>Don't have an account? <Link to='/signup'>Signup now</Link></p>

@@ -1,11 +1,12 @@
     import React from 'react'
     import './Login.css'
     import { Link } from 'react-router-dom'
+    import { GoogleOAuthProvider } from '@react-oauth/google';
 
     const Login = () => {
     return (
         <div className="login-form">
-            <div className='container d-flex justify-content-center align-items-center login'>
+            <div className='container d-flex justify-content-end align-items-center login'>
                 <div className="card p-5">
                     <div className="text-center">
                         <h1>Welcome Back!</h1>
