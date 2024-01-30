@@ -1,5 +1,7 @@
 .forgot-form{
-    background: radial-gradient(circle, #2e2e2e 0%, #000 100%);
+    background: url(../../images/back.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 a{
@@ -11,8 +13,10 @@ a{
 }
 
 .card{
-    border: 1px solid #e7e7e7;
+    border: 1px solid #dbdbdb;
     width: 500px;
+    background: transparent;   
+    backdrop-filter: blur(10px);
 }
 
 .card h1{

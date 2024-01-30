@@ -1,9 +1,7 @@
 .login-form{
-    background: radial-gradient(circle, #2e2e2e 0%, #000 100%);
-}
-
-a{
-    text-decoration: none;
+    background: url(../../images/back.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .login{
@@ -11,8 +9,10 @@ a{
 }
 
 .card{
-    border: 1px solid #e7e7e7;
+    border: 1px solid #dbdbdb;
     width: 500px;
+    background: transparent;   
+    backdrop-filter: blur(10px);
 }
 
 .card h1{
@@ -50,9 +50,13 @@ a{
     margin-top: -14px;
 }
 
-.forgot{
-    font-size: 14px !important;
-    color: #000 !important;
-    margin-bottom: 9px !important;
-    color: #0d6efd !important;
+.password-input .btn{
+    position: absolute;
+    cursor: pointer;
+    color: #898989;
+}
+
+.password-input .btn:focus, .password-input .btn:active{
+    border: none;
+    color: #898989;
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
 return (
     <div className="signup-form">
-        <div className='container d-flex justify-content-start align-items-center signup'>
+        <div className='container d-flex justify-content-center align-items-center signup'>
             <div className="card p-5">
                 <div className="text-center">
                     <h1>Create Account</h1>

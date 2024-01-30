@@ -1,12 +1,18 @@
-    import React from 'react'
+    import React, { useState } from 'react'
     import './Login.css'
     import { Link } from 'react-router-dom'
-    import { GoogleOAuthProvider } from '@react-oauth/google';
 
     const Login = () => {
+
+        const [passwordVisible, setPasswordVisible] = useState(false);
+
+        const togglePasswordVisibility = () => {
+            setPasswordVisible(!passwordVisible);
+        };
+
     return (
         <div className="login-form">
-            <div className='container d-flex justify-content-end align-items-center login'>
+            <div className='container d-flex justify-content-center align-items-center login'>
                 <div className="card p-5">
                     <div className="text-center">
                         <h1>Welcome Back!</h1>
@@ -21,7 +27,10 @@
                                     <label for="formGroupExampleInput2" class="form-label">Password</label>
                                     <Link to='/forgot-password'><p className='forgot'>Forgot Password?</p></Link>
                                 </div>
-                                <input type="password" className="form-control" id="formGroupExampleInput2" placeholder="Enter Your Password"/>
+                                <div className="pass password-input d-flex justify-content-end align-items-center">
+                                    <input type={passwordVisible ? 'text' : 'password'} className="form-control" id="formGroupExampleInput2" placeholder="Enter Your Password"/>
+                                    <button className="btn" type="button" onClick={togglePasswordVisibility}> {passwordVisible ? (<i class="fa-regular fa-eye-slash"></i>) : (<i class="fa-regular fa-eye"></i>)}</button>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-4">

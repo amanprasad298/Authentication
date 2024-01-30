@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Signup from './Component/Sign up/Signup';
 import Forgot from './Component/Forgot/Forgot';
 import Otp from './Component/Otp/Otp';
-import ResetPass from './ResetPass/ResetPass';
+import ResetPass from './Component/ResetPass/ResetPass';
 
 const App = () => {
   return (

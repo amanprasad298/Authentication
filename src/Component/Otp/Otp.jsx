@@ -7,7 +7,7 @@ const Otp = () => {
     const handleInputChange = (e) => {
         const input = e.target;
         const inputValue = input.value.replace(/\D/g, '');
-        input.value = inputValue.slice(0,6);
+        input.value = inputValue.slice(0,1);
     }
 
 return (
@@ -18,8 +18,13 @@ return (
                     <h1>Enter OTP</h1>
                     <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     <div className="form text-start pt-5">
-                        <div class="mb-3">
-                            <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Enter OTP" onInput={handleInputChange}/>
+                        <div class="mb-3 d-flex gap-2">
+                            <input type="text" className="form-control text-center" id="formGroupExampleInput" onInput={handleInputChange}/>
+                            <input type="text" className="form-control text-center" id="formGroupExampleInput" onInput={handleInputChange}/>
+                            <input type="text" className="form-control text-center" id="formGroupExampleInput" onInput={handleInputChange}/>
+                            <input type="text" className="form-control text-center" id="formGroupExampleInput" onInput={handleInputChange}/>
+                            <input type="text" className="form-control text-center" id="formGroupExampleInput" onInput={handleInputChange}/>
+                            <input type="text" className="form-control text-center" id="formGroupExampleInput" onInput={handleInputChange}/>
                         </div>
                         
                     </div>
