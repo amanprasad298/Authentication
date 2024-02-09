@@ -5,7 +5,7 @@
 }
 
 .login{
-    height: 100vh;
+    height: 100svh;
 }
 
 .card{
@@ -59,4 +59,8 @@
 .password-input .btn:focus, .password-input .btn:active{
     border: none;
     color: #898989;
+}
+
+.form-control:focus{
+    box-shadow: none;
 }
